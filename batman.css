@@ -16,7 +16,10 @@ body{
     url(Batman.png)
     ;
     background-size:contain ;
-    background-position: center;}
+    background-position: center;
+    min-width: 440PX;
+}
+
 .container{
 
 
@@ -69,7 +72,10 @@ ul{
 nav{
     width: 50%;
 }
+
+
 li:hover{
+
     cursor: pointer;
 transform: translatey(-0.5em) scale(1.1);
 box-shadow: rgba(199, 5, 5, 0.4) 0px 5px, rgba(199, 5, 5, 0.3) 0px 10px, rgba(199, 5, 5, 0.2) 0px 15px, rgba(199, 5, 5, 0.05) 0px 25px;
@@ -77,6 +83,7 @@ border: rgb(199, 5, 5) 0px solid;
 padding: 1%;
 padding-bottom: 0;
 }
+
 li{
     transition: 200ms 200ms ease-in;
 
@@ -124,7 +131,7 @@ li a{
 }
 .content button:hover{
     cursor: pointer;
-    transform: translatey(-0.5em) scale(1.1);
+    transform:  scale(1.1);
     box-shadow: rgba(199, 5, 5, 0.4) 0px 5px, rgba(199, 5, 5, 0.3) 0px 10px, rgba(199, 5, 5, 0.2) 0px 15px, rgba(199, 5, 5, 0.05) 0px 25px;
     border-color:rgb(199, 5, 5) ;
 
@@ -150,6 +157,38 @@ animation-delay: 1s;
 .content button:active{
     border-color: whitesmoke;
 }
+li:hover {
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 2px 5px;
+    margin-top: 0;
+    box-sizing: border-box;
+    box-shadow: rgba(199, 5, 5, 0.4) 0px 5px, rgba(199, 5, 5, 0.3) 0px 10px, rgba(199, 5, 5, 0.2) 0px 15px, rgba(199, 5, 5, 0.05) 0px 25px;
+    border-color:rgb(199, 5, 5) ;
+
+}
+
+ul li:nth-of-type(1){
+    box-shadow: none;
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 2px 5px;
+    margin-top: 0;
+    box-sizing: border-box;
+    border-color:rgb(199, 5, 5) ;
+
+}
+ul li:nth-of-type(1):hover{
+    box-shadow: rgba(199, 5, 5, 0.4) 0px 5px, rgba(199, 5, 5, 0.3) 0px 10px, rgba(199, 5, 5, 0.2) 0px 15px, rgba(199, 5, 5, 0.05) 0px 25px;
+
+
+}
+
+
+li a{
+    transition: 200ms 200ms ease-in;
+
+}
 
 
 @media(min-width:1040px){
@@ -158,6 +197,7 @@ animation-delay: 1s;
     }
     .container a{
         font-size: 36px;
+        
     }
     .content button{
         font-size: 24px;
@@ -228,13 +268,52 @@ padding-bottom: 15%;
         display: inline-block;
     }
     li a{
-        padding-top: 10Px;
+        padding: 1Px 2px;
+        
         justify-content: space-evenly;
+    }
+    ul{
+        margin: 10px;
     }
 
 }
 
+@media(max-width:440px){
+    .content{
+        height: 300px;
+        margin-top: 10%;
+       }
 
+    .container{
+    
+
+    }
+    li a{
+        padding-top: 1Px;
+
+    }
+    .logo{
+        margin-top: 1px;
+    }
+    .body{
+        height: 300px;
+
+    }
+
+}
+@media(max-width:250px){
+
+
+    .body{
+        height: 200px;
+
+    }
+    .content{
+        height: 200px;
+        margin-top: 20%;
+
+       }
+}
 
 
 @keyframes slideRight {
